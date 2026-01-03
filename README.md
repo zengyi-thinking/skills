@@ -21,6 +21,43 @@ Many skills in this repo are open source (Apache 2.0). We've also included the d
 
 **These skills are provided for demonstration and educational purposes only.** While some of these capabilities may be available in Claude, the implementations and behaviors you receive from Claude may differ from what is shown in these skills. These skills are meant to illustrate patterns and possibilities. Always test skills thoroughly in your own environment before relying on them for critical tasks.
 
+# Featured Skills
+
+## Prompt Optimizer 🚀
+
+**Intelligent prompt enhancement for better AI results**
+
+The `prompt-optimizer` skill automatically enhances user prompts to improve AI output quality. It analyzes conversation context, identifies technical requirements, and applies intelligent optimization strategies.
+
+**Key Features:**
+- **4 Optimization Strategies**: Clarity, Context Enhancement, Example-Driven, Conciseness
+- **3 Optimization Modes**: Minimal, Moderate, Aggressive
+- **Learns from Feedback**: Adapts to user preferences over time
+- **Multi-Language Support**: Works with both Chinese and English prompts
+- **Editor Integration**: Seamlessly works with VS Code, Vim, and Nano
+
+**Usage:**
+```
+帮我写个API，优化
+create a database schema, improve
+```
+
+**How it works:**
+1. Detects trigger keywords in user messages
+2. Analyzes conversation context and technical stack
+3. Applies learned optimization strategies
+4. Presents optimized prompt for user approval
+5. Learns from feedback to improve future optimizations
+
+**Files:**
+- `skills/prompt-optimizer/SKILL.md` - Main instruction file
+- `skills/prompt-optimizer/scripts/optimize.py` - Core optimizer
+- `skills/prompt-optimizer/scripts/memory.py` - Feedback learning system
+- `skills/prompt-optimizer/references/strategies.md` - Strategy documentation
+- `skills/prompt-optimizer/README.md` - Detailed usage guide
+
+For more information, see [prompt-optimizer documentation](./skills/prompt-optimizer/README.md).
+
 # Skill Sets
 - [./skills](./skills): Skill examples for Creative & Design, Development & Technical, Enterprise & Communication, and Document Skills
 - [./spec](./spec): The Agent Skills specification
